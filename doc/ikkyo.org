@@ -28,7 +28,7 @@ can lag some way behind the current release.
 
 *** Erlang Solutions
 
-[[https://www.erlang-solutions.com/downloads/download-erlang-otp][Erlang Solutions]]
+[[https://www.erlang-solutions.com/downloads/download-elixir][Erlang Solutions]]
 have a binary or repository entry that you can use to get
 the latest version of Elixir installed.
 
