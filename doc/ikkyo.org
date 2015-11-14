@@ -66,8 +66,8 @@ Phoenix has the following dependencies
 - [[https://nodejs.org/en/][NodeJS]] or node through [[https://github.com/creationix/nvm][NVM]]
   - for nvm ensure
     - correct shell file has the config: nvm uses ~/.bashrc by default but mac
-      uses ~/.bash_profile when opening a shell
-    - set a default nodejs to launch wheneve a shell is opened
+      uses ~/.bash_login when opening a shell
+    - set a default nodejs to launch whenever a shell is opened
       - ~nvm install 5.0~
       - ~nvm alias default 5.0~
 
@@ -75,15 +75,14 @@ Phoenix has the following dependencies
 
 Once all of the dependencies have been met
 
-you will need to install Erlang (and Elixir's) package manage hex.
+you will need to install Erlang (and Elixir's) package manager hex.
 
 ~mix local.hex~
 
 then install phoenix
 
 #+BEGIN_SRC bash
-mix archive.install https://github.com/phoenixframework/phoenix/releases/
-download/v1.0.3/phoenix_new-1.0.3.ez
+mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v1.0.3/phoenix_new-1.0.3.ez
 #+END_SRC
 
 then create the new project
