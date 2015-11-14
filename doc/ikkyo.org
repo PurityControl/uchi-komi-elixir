@@ -51,3 +51,49 @@ Emacs has a package called [[https://github.com/tonini/alchemist.el][alchemist]]
 The site has full instructions for its installation.
 
 
+
+* Phoenix
+
+Phoenix is a web development framework for Elixir
+
+** Dependencies
+
+Phoenix has the following dependencies
+
+- [[https://github.com/PurityControl/uchi-komi-erlang/blob/master/doc/ikkyo.org][Erlang]]
+- Elixir (see above)
+- Postgresql
+- [[https://nodejs.org/en/][NodeJS]] or node through [[https://github.com/creationix/nvm][NVM]]
+  - for nvm ensure
+    - correct shell file has the config: nvm uses ~/.bashrc by default but mac
+      uses ~/.bash_login when opening a shell
+    - set a default nodejs to launch whenever a shell is opened
+      - ~nvm install 5.0~
+      - ~nvm alias default 5.0~
+
+** Installation 
+
+Once all of the dependencies have been met
+
+you will need to install Erlang (and Elixir's) package manager hex.
+
+~mix local.hex~
+
+then install phoenix
+
+#+BEGIN_SRC bash
+mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v1.0.3/phoenix_new-1.0.3.ez
+#+END_SRC
+
+then create the new project
+
+#+BEGIN_SRC bash
+mix phoenix.new prj_name
+
+cd prj_name
+mix ecto.create  # create the database
+mix phoenix.server  # or iex -S mix phoenix.server
+
+#browse localhost:4000
+
+#+END_SRC
