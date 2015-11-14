@@ -4,6 +4,11 @@
 The best resource for getting started is at
 [[http://elixir-lang.org/install.html][the elixir install page]]
 
+* Dependencies
+
+Elixir depends on Erlang.
+Please see [[https://github.com/PurityControl/uchi-komi-erlang/blob/master/doc/ikkyo.org][Erlang installation instructions]].
+
 * Operating Systems specific information
 
 ** Windows
