@@ -1,1 +1,48 @@
 #+TITLE: Dai-ikkyo (group 1) - Setting up the environment
+
+* Resources
+The best resource for getting started is at
+[[http://elixir-lang.org/install.html][the elixir install page]]
+
+* Operating Systems specific information
+
+** Windows
+Download the binary from the elixir install page
+linked above.
+Follow the usual install procedure.
+
+It can also be installed with [[https://chocolatey.org][chocolatey]]
+
+** MAC OSX
+Use your preferred package manager, ports / brew, to install
+
+~sudo port install elixir~
+
+** *nix environments
+
+*** Package manager
+
+All major distributions and the BSD's have an elixir package.
+BSD's tend to be more current but linux package distributions
+can lag some way behind the current release.
+
+*** Erlang Solutions
+
+[[https://www.erlang-solutions.com/downloads/download-erlang-otp][Erlang Solutions]]
+have a binary or repository entry that you can use to get
+the latest version of Elixir installed.
+
+*** ubuntu example
+
+#+BEGIN_SRC bash
+wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb \
+     && sudo dpkg -i erlang-solutions_1.0_all.deb
+#+END_SRC
+
+* Emacs
+
+Emacs has a package called [[https://github.com/tonini/alchemist.el][alchemist]] designed for developing in Elixir.
+
+The site has full instructions for its installation.
+
+
