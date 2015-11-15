@@ -56,9 +56,14 @@ The site has full instructions for its installation.
 
 Phoenix is a web development framework for Elixir
 
+** Resources
+
+The Website for Phoenix can be found at [[http://www.phoenixframework.org/][Phoenixframework.org]]
+It has [[http://www.phoenixframework.org/docs/overview][guides]] and [[http://hexdocs.pm/phoenix/Phoenix.html][docs]].
+
 ** Dependencies
 
-Phoenix has the following dependencies
+phoenix has the following dependencies
 
 - [[https://github.com/PurityControl/uchi-komi-erlang/blob/master/doc/ikkyo.org][Erlang]]
 - Elixir (see above)
