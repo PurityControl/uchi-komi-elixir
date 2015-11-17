@@ -68,6 +68,8 @@ phoenix has the following dependencies
 - [[https://github.com/PurityControl/uchi-komi-erlang/blob/master/doc/ikkyo.org][Erlang]]
 - Elixir (see above)
 - Postgresql
+- inotify-tools (linux only)
+  - ~sudo apt-get install inotify-tools~
 - [[https://nodejs.org/en/][NodeJS]] or node through [[https://github.com/creationix/nvm][NVM]]
   - for nvm ensure
     - correct shell file has the config: nvm uses ~/.bashrc by default but mac
