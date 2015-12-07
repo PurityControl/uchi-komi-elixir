@@ -1,6 +1,6 @@
 defmodule EvenFibs do
   def sum_even_fibs_to limit do
-    fibs = fibs_to 4000000
+    fibs = fibs_to limit
     Enum.sum(for x <- fibs, rem(x, 2) == 0, do: x)
   end
 
