@@ -1,10 +1,10 @@
 #+TITLE: Dai-yonkyo (Group 4) - Workflows
 
-# Create a Project with the Mix tool
+* Create a Project with the Mix tool
 
 Mix is a useful too for bootstrapping your Elixir project.
 
-## Create a new project
+** Create a new project
 
 Mix will create a project using the command
 
@@ -24,6 +24,7 @@ mix new id --module ID
 
 This will create a structure with the following important information
 
+#+BEGIN_SRC shell
 ---mix.exs
  |
   -README.md
@@ -33,6 +34,7 @@ This will create a structure with the following important information
   -test/
  |
   -config/
+#+END_SRC
 
 - the mix.exs file is your projects main source of information about the
   project. It has the following information in it.
@@ -51,13 +53,13 @@ This will create a structure with the following important information
 - the config folder has a file called config.exs and allows configuration
   for you mix project
 
-## Mix Commands
+** Mix Commands
 
 Once you have created your project with ~mix new~ you need to ~cd~ into
 the project.
 All mix commands need to be run from the root of the projects directory.
 
-### Testing
+*** Testing
 
 #+BEGIN_SRC shell
 # run you suite of tests with
@@ -77,7 +79,7 @@ This ensures that changes to the test suite are realised immediately.
 Before the tests are run mix will build the system ensuring the latest
 changes to your code are tested.
 
-### Building
+*** Building
 
 You can build your project using 
 
@@ -85,7 +87,7 @@ You can build your project using
 mix compile
 #+END_SRC
 
-### Help
+*** Help
 
 If you want a list of all the possible mix commands run
 
@@ -93,7 +95,7 @@ If you want a list of all the possible mix commands run
 mix help
 #+END_SRC
 
-### Misc
+*** Misc
 
 You can a given file or expression in the context of the application using
 
@@ -101,7 +103,7 @@ You can a given file or expression in the context of the application using
 mix run file_or_expression
 #+END_SRC
 
-## Resources
+** Resources
 
 [[http://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html][Elixir lang introduction to mix]]
 
