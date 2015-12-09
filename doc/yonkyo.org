@@ -1,1 +1,111 @@
 #+TITLE: Dai-yonkyo (Group 4) - Workflows
+
+* Create a Project with the Mix tool
+
+Mix is a useful too for bootstrapping your Elixir project.
+
+** Create a new project
+
+Mix will create a project using the command
+
+#+BEGIN_SRC shell
+mix new project_name
+#+END_SRC
+
+names must be lower case letters and underscorse only.
+
+It will camel case the project_name to make a module ProjectName.
+If you require a different module name or different capitalisation
+use the ~--module~ argument.
+
+#+BEGIN_SRC shell
+mix new id --module ID
+#+END_SRC
+
+This will create a structure with the following important information
+
+#+BEGIN_SRC shell
+---mix.exs
+ |
+  -README.md
+ |
+  -lib/
+ |
+  -test/
+ |
+  -config/
+#+END_SRC
+
+- the mix.exs file is your projects main source of information about the
+  project. It has the following information in it.
+  - project details
+    - app
+    - version
+    - elixir version
+    - build environment
+    - dependencies
+  - configuration details for the OTP application
+- the README.md file has been filled out with boiler plate template that
+  describes how to install your project and a TODO to fill out a description
+  for the project
+- the lib folder contains the project source code
+- the test folder containse the tests for the project
+- the config folder has a file called config.exs and allows configuration
+  for you mix project
+
+** Mix Commands
+
+Once you have created your project with ~mix new~ you need to ~cd~ into
+the project.
+All mix commands need to be run from the root of the projects directory.
+
+*** Testing
+
+#+BEGIN_SRC shell
+# run you suite of tests with
+mix test
+
+# run tests for a particular test file with
+mix test tests/my_test_file.exs
+
+# run a particular test in a file by giving a line number
+mix test tests/my_test_file.exs:34
+#+END_SRC
+
+Mix test files should be exs files so they are not compiled
+and run dynamically each time the test suite is run.
+This ensures that changes to the test suite are realised immediately.
+
+Before the tests are run mix will build the system ensuring the latest
+changes to your code are tested.
+
+*** Building
+
+You can build your project using 
+
+#+BEGIN_SRC shell
+mix compile
+#+END_SRC
+
+*** Help
+
+If you want a list of all the possible mix commands run
+
+#+BEGIN_SRC shell
+mix help
+#+END_SRC
+
+*** Misc
+
+You can run a given file or expression in the context of the application using
+
+#+BEGIN_SRC shell
+mix run file_or_expression
+#+END_SRC
+
+** Resources
+
+[[http://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html][Elixir lang introduction to mix]]
+
+[[http://elixir-lang.org/docs/v1.0/mix/overview.html][Mix edocs]]
+
