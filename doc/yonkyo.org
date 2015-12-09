@@ -14,9 +14,9 @@ mix new project_name
 
 names must be lower case letters and underscorse only.
 
-it will camel case the project_name to make a module ProjectName
-if you require a different module name or different capitalisation
-use the ~--module~ argument
+It will camel case the project_name to make a module ProjectName.
+If you require a different module name or different capitalisation
+use the ~--module~ argument.
 
 #+BEGIN_SRC shell
 mix new id --module ID
@@ -97,7 +97,7 @@ mix help
 
 *** Misc
 
-You can a given file or expression in the context of the application using
+You can run a given file or expression in the context of the application using
 
 #+BEGIN_SRC shell
 mix run file_or_expression
